@@ -1,0 +1,27 @@
+\mathbb{N}=\{0; 1; 2; 3 \ldots n\ldots\}
+
+
+\mathbb{Z}=\{\ldots -3; -2; -1; 0; +1; +2; +3 \ldots\}
+
+
+\mathbb{Q}\sb a=\{x|x=\frac p q  con p \in \mathbb{N} \land q \in \mathbb{N}, q\neq0\}
+
+
+semisomma di a e b:
+c = \frac{a+b}{2}
+
+
+numwei decimali illimitati non periodici
+\sqrt 2 = 1.414213\ldots
+Le radici dei numeri naturali che non sono quadrati perfetti non sono numeri razionali
+
+
+R=Q\cup I
+\mathbb{R}=\mathbb{Q}\cup\mathbb{I}
+
+
+Due classi H1 e H2 composte di numeri razionali sono contigue se sodddisfano le seguenti a e b:
+a) \forall h1 \in H1, \forall h2 in H2 \implies h1 < h2
+b) \forall \epsilon \in Q^+, \exists h2 in H2,\exists h1 in H1 | h2 - h1< \epsilon
+
+\section
