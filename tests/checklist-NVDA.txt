@@ -96,7 +96,7 @@ SOLUZIONE frazione di x+1 su x-1 fine frazone + frazione di x+2 su x-2 fine fraz
 \{\frac{x+1+x^2+x+3\cdoty}{x-1}+\frac{x+2}{x-2} \}	PROVA 4
 SOLUZIONE graffa frazione di x+1 su x-1 fine frazione + frazione di x+2 su x-2 fine frazione chiusa graffa
 
-\{\frac{(x+1)+x^2+1+x}{[x+x^2-(-1)]-(1-x)}\cdot 17\}+\sqrt{\frac{1}{9}} 	PROVA 5
+z\{\frac{(x+1)+x^2+1+x}{[x+x^2-(-1)]-(1-x)}\cdot 17\}+\sqrt{\frac{1}{9}}	PROVA 5
 SOLUZIONE graffa frazione numeratore x+1 denominatore x-1 fine frazione moltiplicato 17 chiusa graffa  + radice quadrata di frazione numeratore 1 denominatore 9 fine frazione fine radice 
 
 \{\frac{[(x+1)+x^2]+1+x}{[x+x^2-(-1)]-(1-x)}\cdot 17\}+\sqrt{\frac{1}{9}} 	PROVA 6
@@ -635,7 +635,8 @@ SOLUZIONE frazione di x+1 su x-1 fine frazone + frazione di x+2 su x-2 fine fraz
 
 \{\frac {x+1+x^2+x+3\cdoty} {x-1} +\frac {x+2} {x-2} \}	PROVA 4
 
-\{\frac{(x+1)+x^2+1+x}{[x+x^2-(-1)]-(1-x)}\cdot 17\}+\sqrt{\frac{1}{9}} 	PROVA 5
+\{\frac{(x+1)+x^2+1+x}{[x+x^2-(-1)]-(1-x)}\cdot 17\} +\sqrt{\frac{1}{9}}
++\sqrt{\frac{1}{9}}=\frac{1}{3} 	PROVA 4bis ex post, VERIFICARE
 
 \{\frac{[(x+1)+x^2]+1+x}{[x+x^2-(-1)]-(1-x)}\cdot 17\}+\sqrt{\frac{1}{9}} 	PROVA 6
 
@@ -650,6 +651,7 @@ TESTSET ALGEBRA SIMBOLICA
 Algebra simbolica
 ax+by+cz=-1
 \frac {ax+1} {ax^2}
-\sqrt {bx^2}
+\sqrt{b} =x b} yuston abbiamo un problema, questa è considerata una radice. regex \\sqrt\{(.*)\} troppo generica
+\sqrt {bx^2}=x \sqrt {b}
 
 \dd {a}

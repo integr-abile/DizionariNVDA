@@ -46,7 +46,7 @@ f(x)	  f aperta tonda x chiusa tonda  	0	0
 #PR2:Differenziali
 \\differential\{(\w)\}	de \1 	0	1
 #PR2:Frazione tra due interi
-\\frac\s?\{(\d*)\}\{(\d*)\}	 , frazione di \1 su \2, fine frazione, 	0	1
+\\frac\{(\d*)\}\{(\d*)\}	 , frazione di \1 su \2, fine frazione, 	0	1
 #PR2:Valore assoluto di numero
 \\abs\{(\d*)\}	modulo di  \1, fine modulo, 	0	1
 #PR3:monomio grado uno, individuato da xyz
@@ -54,7 +54,7 @@ f(x)	  f aperta tonda x chiusa tonda  	0	0
 #PR3:monomio di GRADO >1
 (\d+)x\^(\d*x?)	\1 x apice \2 	0	1
 #PR2:Frazione tra due interi
-\\frac\s?\{(\d*)\}\{(\d*)\}	 frazione di \1 su \2, fine frazione, 	0	1
+\\frac\{(\d*)\}\{(\d*)\}	 frazione di \1 su \2, fine frazione, 	0	1
 #PR4:Radice quadrata di espressione
 \\sqrt\{(.*)\}	 radice  quadrata di \1 , fine radice, 	0	1
 #PR4:Regex per la somma di frazione# \\frac\{(((?!\\frac).)*)\}\{(((?!\\frac).)*)\} #semplificato
