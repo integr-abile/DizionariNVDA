@@ -32,7 +32,7 @@ f(x)	  f aperta tonda x chiusa tonda  	0	0
 ##frazione interna;
 \\frac\s?\{([^{}]*)\}\{([^{}]*)\}	 , frazione di \1 su \2, fine frazione, 	0	1
 #PR3:monomio grado uno, individuato da xyz
-(\w)([xyz])([\+-=\^])	\1 \2 \3 	0	1
+(\{[\+-=\^])?(\w)([xyz])([\+-=\^}])	\1 \2 \3 \4 	0	1
 #PR1: apice con graffe
 \^\{(\d*x?|.\\infty)\}	 apice \1 , 	0	1
 #PR1: apice senza graffe
