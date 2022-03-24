@@ -1,0 +1,15 @@
+PER IL LETTORE NVDA
+In tutti i file di questa cartella ci sono contenuti leggibili con i nostri dizionari NVDA.
+Sono articolati in documenti diversi, in quanto servono a verificare categorie di simboli diversi.
+I files chiamati formule contengono l'insieme di formule di test o "testset".
+Ogni formula è seguita dal nome, tipicamente "prova 1", "prova2", eccetera.
+Inoltre ogni formula è seguita dalla scrittura in lingua corrispondente; 
+quest'ultima serve per verificare che la lettura con dizionario va a buon fine nella prova specifica.
+Essendo scritti a mano, prove e soluzioni non sono immuni da errori. 
+Se doveste trovarne, fateci il favore di segnalarlo.
+
+Sono possibili due segnalazioni diverse:
+all'URL che segue(che è la soluzione più ottimale) è possibile aprire nuove voci di segnalazione, dove inserirai il tipo di errore;  https://github.com/integr-abile/DizionariNVDA/issues/new
+oppure inviando un'email ad accessibile.matematica@unito.it
+è sufficiente scriverci "ciao nel file formule-1.txt c'è questo errore: la formula di PROVA 1 viene letta così, eccetera"
+Buono Studio e Buon Lavoro!

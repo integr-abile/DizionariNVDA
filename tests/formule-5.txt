@@ -1,0 +1,93 @@
+TESTSET 5
+Letture minori
+
+Due classi H1 e H2 composte di numeri razionali sono contigue se sodddisfano le seguenti a e b:
+a) \forall h1 \in H1, \forall h2 in H2 \implies h1 < h2
+B) \forall \epsilon \in Q^+, \exists h2 in H2,\exists h1 in H1 | h2 - h1< \epsilon
+
+
+(1-x)
+1\leq{2}
+
+DIZIONARIO AL TESTSET 5
+#PR1"-": Senza questa voce, il carattere verrebbe letto come "trattino"
+-	 meno 	0	1
+|	, barra, 	0	0
+##PR1: punto di moltiplicazione
+\\cdot	 moltiplicato 	0	1
+#PR1:Spazi latex, meglio inquadrarli subito
+\\(,|;|:)	, 	0	1
+#PR1:Graffe aritmetiche, prioritarie
+\\{	, aperta graffa, 	0	1
+#PR1:Idem
+\\}	, chiusa graffa, 	0	1
+#PR1:Quadre aritmetiche, prioritarie
+\[	, aperta quadra, 	0	1
+#PR1:Idem
+\]	, chiusa quadra, 	0	1
+#PR1:Tonde aritmetiche, prioritarie
+\(	, aperta tonda, 	0	1
+#PR1:Idem
+\)	, chiusa tonda, 	0	1
+#PR1:Alfabeto greco
+\\(alpha|beta|gamma|delta|epsilon|zeta|eta|theta|iota|kappa|lambda|mu|nu|xi|omicron|pi|rho|sigma|tau|upsilon|phi|chi|psi|omega|Alpha|Beta|Gamma|Delta|Epsilon|Zeta|Eta|Theta|Iota|Kappa|Lambda|Mu|Nu|Xi|omicron|Pi|Rho|Sigma|Tau|Upsilon|Phi|Chi|Psi|Omega)	 \1 	0	1
+##frazione interna;
+\\frac\{([^{}]*)\}\{([^{}]*)\}	 , frazione di \1 su \2, fine frazione, 	0	1
+#PR1: apice eventualmente con graffe
+\^\{?(\d*x?)\}?	 apice \1 	0	1
+#PR2:Radice quadrata di monomio
+\\sqrt\{(\d*x?)\}	 radice  quadrata di \1, fine radice, 	0	1
+#PR2:Radice di grado n di monomio
+\\sqrt(\[\d*\])\{(\d*x?)\}	 radice grado \1 di \2 fine radice, 	0	1
+#PR2:Differenziali
+\\dd\{(\w)\}	de \1 	0	1
+#PR2:Frazione tra due interi
+\\frac\{(\d*)\}\{(\d*)\}	 , frazione di \1 su \2, fine frazione, 	0	1
+#PR2:Valore assoluto di numero
+\\abs\{(\d*)\}	modulo di  \1, fine modulo, 	0	1
+#PR3:monomio di GRADO >1
+(\d*)x\^(\d*x?)	\1 x apice \2 	0	1
+#PR2:Frazione tra due interi
+\\frac\{(\d*)\}\{(\d*)\}	 frazione di \1 su \2, fine frazione, 	0	1
+#PR4:Radice quadrata di espressione
+\\sqrt\{(.*)\}	 radice  quadrata di \1 , fine radice, 	0	1
+#PR4:Regex per la somma di frazione# \\frac\{(((?!\\frac).)*)\}\{(((?!\\frac).)*)\} #semplificato
+\\frac\{(((?!\\).)*)\}\{(((?!\\).)*)\}	 frazione esterna di numeratore, \1 , denominatore, \3, fine frazione esterna, 	0	1
+\\frac\{frazione	 frazione esterna intercetta dicitura della frazione , 	0	1
+\\int	integrale di 	0	1
+\\sb	pedice 	0	1
+\\ldots	 puntini 	0	1
+\\pm	 più o meno 	0	1
+\\mp	 meno o più 	0	1
+\infty	 infinito 	0	0
+\in	 appartenente a 	0	0
+\notin	 non appartenente a 	0	0
+\exists	 esiste 	0	0
+\nexists	 non esiste 	0	0
+\implies	 implica 	0	0
+\iff	 se e solo se 	0	0
+\centernot	 non 	0	0
+\cup	 unione 	0	0
+\cap	 intersezione 	0	0
+\times	 cartesiano 	0	0
+\subseteq	 sottoinsieme di 	0	0
+\subset	 sottoinsieme proprio di 	0	0
+\\mathbb{(\w)}	 \1 grande	0	1
+\leq	 minore uguale di 	0	0
+\geq	 maggiore uguale di 	0	0
+\nless	 non minore di  	0	0
+\parallel	 parallelo a 	0	0
+\perp	 perpendicolare a 	0	0
+\land	 and logico 	0	0
+\lor	 or logico 	0	0
+\neg	 negato di 	0	0
+\propto	 proporzionale a 	0	0
+\prime	 primo 	0	0
+|	 barra 	0	0
+!	 punto esclamativo 	0	0
+\binom	 coefficiente binomiale di 	0	0
+[bp]?matrix	 matrice 	0	1
+\forall	 ogni 	0	0
+#PR NULLA: serve ad alleggerire la lettura
+\{(.)\}	 \1 	0	1
+

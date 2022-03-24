@@ -1,0 +1,82 @@
+TESTSET 3 - frazioni contenenti frazioni
+
+
+
+PROVA 1
+\frac{1+\frac{1}{x+1}}{1-\frac{1}{x-1}} FINE PROVA 1
+SOLUZIONE frazione esterna di numeratore, uno +, frazione di 1 su x+1, fine frazione, denominatore, 1 meno, frazione di 1 su x-1, fine frazione, fine frazione esterna FINE SOLUZIONE PROVA 1
+
+PROVA 2
+\frac{1+\frac{2}{03x+4}}{5-\frac{6}{7x-8}} FINE PROVA 2
+SOLUZIONE frazione esterna di numeratore, uno +, frazione di 2 su zero tre x più 4, fine frazione, denominatore, 5 meno, frazione di 6 su 7x -8, fine frazione, fine frazione esterna , FINE SOLUZIONE PROVA 2
+
+PROVA 3
+\frac{1+(\frac{1}{3x+1})}{1-\frac{1}{(x-1)}} FINE PROVA 3
+SOLUZIONE frazione esterna di numeratore, uno +, aperta tonda, frazione di 1 su 3 x+1, fine frazione, chiusa tonda, denominatore, 1 meno, frazione di 1 su aperta tonda, x-1 , chiusa tonda, fine frazione, fine frazione esterna FINE SOLUZIONE PROVA 3
+
+PROVA 5
+(1-x)	 FINE PROVA 5
+SOLUZIONE aperta tonda, uno meno x, chiusa tonda, FINE SOLUZIONE PROVA 5
+ 
+FINE TESTSET 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIZIONARIO AL TESTSET 3
+
+#PR1"-": Senza questa voce, il carattere verrebbe letto come "trattino"
+-	 meno 	0	1
+#PR1: punto di moltiplicazione
+\\cdot	 moltiplicato 	0	1
+#PR1:Graffe aritmetiche, prioritarie
+\\(,|;|:)	 , 	0	1
+#PR1:Graffe aritmetiche, prioritarie
+\\{	aperta graffa, 	0	1
+#PR1:Idem
+\\}	chiusa graffa, 	0	1
+#PR1:Quadre aritmetiche, prioritarie
+\[	aperta quadra, 	0	1
+#PR1:Idem
+\]	chiusa quadra, 	0	1
+#PR1:Tonde aritmetiche, prioritarie
+\(	aperta tonda, 	0	1
+#PR1:Idem
+\)	chiusa tonda, 	0	1
+#PR1:Alfabeto greco
+\\(alpha|beta|gamma|delta|epsilon|zeta|eta|theta|iota|kappa|lambda|mu|nu|xi|omicron|pi|rho|sigma|tau|upsilon|phi|chi|psi|omega|Alpha|Beta|Gamma|Delta|Epsilon|Zeta|Eta|Theta|Iota|Kappa|Lambda|Mu|Nu|Xi|omicron|Pi|Rho|Sigma|Tau|Upsilon|Phi|Chi|Psi|Omega)	 \1 	0	1
+##vediamo se coglie il \delta x: no, anche qui va catturata la controbarra;
+\\frac\{([^{}]*)\}\{([^{}]*)\}	 frazione di \1 su \2, fine frazione, 	0	1
+#PR1: apice eventualmente con graffe
+\^\{?(\d*x?)\}?	 apice \1 	0	1
+#PR2:Radice quadrata di monomio
+\\sqrt\{(\d*x?)\}	 radice  quadrata di \1, fine radice, 	0	1
+#PR2:Radice di grado n di monomio
+\\sqrt(\[\d*\])\{(\d*x?)\}	 radice grado \1 di \2 fine radice, 	0	1
+#PR2:Differenziali
+\\dd\{(\w)\}	de \1 	0	1
+#PR2:Frazione tra due interi
+\\frac\{(\d*)\}\{(\d*)\}	 frazione di \1 su \2, fine frazione, 	0	1
+#PR2:Valore assoluto di numero
+\\abs\{(\d*)\}	modulo di  \1, fine modulo, 	0	1
+#PR3:monomio di GRADO >1
+(\d*)x\^(\d*x?)	\1 x apice \2 	0	1
+#PR2:Frazione tra due interi
+\\frac\{(\d*)\}\{(\d*)\}	 frazione di \1 su \2, fine frazione, 	0	1
+#PR4:Radice quadrata di espressione
+\\sqrt\{(.*)\}	 radice  quadrata di \1 , fine radice, 	0	1
+#PR4:Regex per la somma di frazione# \\frac\{(((?!\\frac).)*)\}\{(((?!\\frac).)*)\} #semplificato
+\\frac\{(((?!\\).)*)\}\{(((?!\\).)*)\}	 frazione esterna di numeratore, \1 , denominatore, \3, fine frazione esterna, 	0	1
+\\frac\{frazione	 frazione esterna intercetta dicitura della frazione , 	0	1
+\\int	integrale di 	0	1
+\\sb	pedice 	0	1
+

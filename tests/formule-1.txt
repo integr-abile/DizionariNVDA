@@ -1,0 +1,121 @@
+TESTSET 1
+
+
+
+PROVA 1  \{[(1+18)+(20-3)]+(x)\} 	FINE PROVA 1
+SOLUZIONE aperta graffa, aperta quadra, aperta tonda 1+18 chiusa tonda, + aperta tonda 20-3 , chiusa tonda, chiusa quadra, + aperta tonda x chiusa tonda chiusa graffa, FINE SOLUZIONE PROVA 1
+
+PROVA 2  \frac{2}{3} 		FINE PROVA 2
+SOLUZIONE frazione di 2 su 3, fine frazione, FINE SOLUZIONE PROVA 2
+
+PROVA 3  \frac{\Delta y}{\Delta x} 	FINE PROVA 3
+SOLUZIONE frazione di delta y su delta x, fine frazione, FINE SOLUZIONE PROVA 3
+
+PROVA 4  \frac{2}{3}+\frac{4}{5x}  	FINE PROVA 4
+SOLUZIONE frazione di 2 su 3, fine frazione + frazione di 4 su 5 x fine frazione , FINE SOLUZIONE PROVA 4
+
+PROVA 5  \frac{x+1}{x-1}+\frac{x+2}{x-2} 	FINE PROVA 5
+SOLUZIONE frazione di x+1 su x-1, fine frazione + frazione di x+2 su x-2, fine frazione, FINE SOLUZIONE PROVA 5
+
+PROVA 6  \{\frac{x+1}{x-1}+\frac{x+2}{x-2} \}	FINE PROVA 6
+SOLUZIONE aperta graffa, frazione di x+1 su x-1, fine frazione + frazione di x+2 su x-2, fine frazione, chiusa graffa, FINE SOLUZIONE PROVA 6
+
+PROVA 7  \{\frac{x+1}{x-1}\cdot 17\}+\sqrt{\frac{1}{9}} FINE PROVA 7
+SOLUZIONE aperta graffa, frazione di x+1 su x-1, fine frazione, moltiplicato 17, chiusa graffa  + radice quadrata di, frazione di 1 su 9, fine frazione, fine radice , FINE SOLUZIONE PROVA 7
+
+PROVA 8  \int\sb{\frac{1}{10}}^{11} \sqrt{\frac{1}{1+x}}\,\dd{x}  	FINE PROVA 8
+SOLUZIONE integrale di pedice aperta graffa, frazione di 1 su 10, fine frazione, chiusa graffa apice 11, radice quadrata di frazione di 1 su 1+x fine frazione, fine radice, de x , FINE SOLUZIONE PROVA 8
+                             
+PROVA 9  \{ [\int\sb{\frac{1}{10}}^{1x} 	\sqrt{\frac{1}{1+x}}\;\dd{x}]+[(\frac{x+1}{x-1}\cdot 17)+(\frac{\Delta y}{\Delta x})] \}	FINE PROVA 9
+SOLUZIONE aperta graffa,  aperta quadra, integrale di pedice aperta graffa, frazione di 1 su 10 , fine frazione, chiusa graffa, apice 1x , radice quadrata di, frazione di 1 su 1+x, fine frazione, fine radice de x, chiusa quadra più 
+aperta quadra, aperta tonda, frazione di x+1 su x-1, fine frazione,  moltiplicato 17 chiusa tonda +  aperta tonda frazione di delta y su delta x, fine frazione, chiusa tonda, chiusa quadra, chiusa graffa , FINE SOLUZIONE PROVA 9
+
+Prove di monomi e polinomi:
+
+x+1	PROVA 11
+SOLUZIONE x più uno FINE PROVA 11
+
+2x+1	PROVA 12
+SOLUZIONE due x più uno FINE PROVA 12
+
+2x-1 	PROVA 13
+SOLUZIONE due x meno uno, FINE PROVA 13
+
+2x^3				PROVA 14 
+SOLUZIONE due x apice 3 FINE PROVA 14
+
+4x^2+2x+1=0			PROVA 15 
+SOLUZIONE 4 x apice 2 più due x più uno uguale zero  FINE PROVA 15
+
+x-1		PROVA 16
+SOLUZIONE x meno uno FINE PROVA 16
+
+FINE TESTSET 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIZIONARIO PRODOTTO AL TESTSET 1
+
+usato con dizionario
+#PR1"-": Senza questa voce, il carattere verrebbe letto come "trattino"
+-	 meno 	0	1
+#PR1: punto di moltiplicazione
+\\cdot	 moltiplicato 	0	1
+#PR1:Graffe aritmetiche, prioritarie
+\\(,|;|:)	 , 	0	1
+#PR1:Graffe aritmetiche, prioritarie
+\\{	aperta graffa, 	0	1
+#PR1:Idem
+\\}	chiusa graffa, 	0	1
+#PR1:Quadre aritmetiche, prioritarie
+\[	aperta quadra, 	0	1
+#PR1:Idem
+\]	chiusa quadra, 	0	1
+#PR1:Tonde aritmetiche, prioritarie
+\(	aperta tonda, 	0	1
+#PR1:Idem
+\)	chiusa tonda, 	0	1
+#PR1:Alfabeto greco
+\\(alpha|beta|gamma|delta|epsilon|zeta|eta|theta|iota|kappa|lambda|mu|nu|xi|omicron|pi|rho|sigma|tau|upsilon|phi|chi|psi|omega|Alpha|Beta|Gamma|Delta|Epsilon|Zeta|Eta|Theta|Iota|Kappa|Lambda|Mu|Nu|Xi|omicron|Pi|Rho|Sigma|Tau|Upsilon|Phi|Chi|Psi|Omega)	 \1 	0	1
+##vediamo se coglie il \delta x: no, anche qui va catturata la controbarra;
+\\frac\{([\d\w\s\+\-\/\\]*)\}\{([\d\w\s\+\-\/\\]*)\}	frazione di \1 su \2, fine frazione, 	0	1
+#PR1: apice eventualmente con graffe
+\^\{?(\d*x?)\}?	 apice \1 	0	1
+#PR2:Radice quadrata di monomio
+\\sqrt\{(\d*x?)\}	 radice  quadrata di \1, fine radice, 	0	1
+#PR2:Radice di grado n di monomio
+\\sqrt(\[\d*\])\{(\d*x?)\}	 radice grado \1 di \2 fine radice, 	0	1
+#PR2:Differenziali
+\\dd\{(\w)\}	de \1 	0	1
+#PR2:Frazione tra due interi
+\\frac\{(\d*)\}\{(\d*)\}	 frazione di \1 su \2, fine frazione, 	0	1
+#PR2:Valore assoluto di numero
+\\abs\{(\d*)\}	modulo di  \1, fine modulo, 	0	1
+#PR3:monomio di GRADO >1
+(\d*)x\^(\d*x?)	\1 x apice \2 	0	1
+#PR2:Frazione tra due interi
+\\frac\{(\d*)\}\{(\d*)\}	 frazione di \1 su \2, fine frazione, 	0	1
+#PR4:Radice quadrata di espressione
+\\sqrt\{(.*)\}	 radice  quadrata di \1 , fine radice, 	0	1
+#PR4:Regex per la somma di frazione# PROBLEMA: prende graffe non sue
+\\frac\{(((?!\\frac).)*)\}\{(((?!\\frac).)*)\}	 frazione finale di \1 su \3, fine frazione, 	0	1
+\\int	integrale di 	0	1
+\\sb	pedice 	0	1
+
