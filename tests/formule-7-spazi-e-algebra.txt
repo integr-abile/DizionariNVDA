@@ -1,13 +1,13 @@
 TESTSET 7 + SPAZI PREGRAFFA /  POSTGRAFFA
 
 \frac {\Delta y} {\Delta x} 	PROVA 1
-SOLUZIONE frazione di delta y su delta x, fine frazione FINE SOLUZIONE PROVA 1
+SOLUZIONE frazione di delta y su delta x, fine frazione, FINE SOLUZIONE PROVA 1
 
 \frac {2} {3}+\frac {4} {5x}  	FINE PROVA 2
-SOLUZIONE frazione di 2 su 3, fine frazione, + frazione di 4 su 5 x, fine frazione, FINE SOLUZIONE PROVA 2
+SOLUZIONE frazione di 2 su 3, fine frazione, +, frazione di 4 su 5 x, fine frazione, FINE SOLUZIONE PROVA 2
 
 (\frac{x+1} {x-1})+\frac {x+2}{x-2} 	PROVA 3
-SOLUZIONE aperta tonda, frazione di x+1 su x-1 fine frazione, chiusa tonda, + frazione di x+2 su x-2, fine frazione, FINE SOLUZIONE PROVA 3
+SOLUZIONE aperta tonda, frazione di x+1 su x-1, fine frazione, chiusa tonda, + frazione di x+2 su x-2, fine frazione, FINE SOLUZIONE PROVA 3
 
 \{\frac {x+1+x^2+x+3\cdoty} {x-1} +\frac {x+2} {x-2} \}	PROVA 4
 SOLUZIONE  aperta graffa, frazione di x più 1 più x apice 2, + x+3 moltiplicato y su x -1, fine frazione, + frazione di x più due su x meno due, fine frazione, chiusa graffa  FINE SOLUZIONE PROVA 4
