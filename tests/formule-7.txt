@@ -4,29 +4,29 @@ TESTSET 7 + SPAZI PREGRAFFA /  POSTGRAFFA
 SOLUZIONE frazione di delta y su delta x, fine frazione FINE SOLUZIONE PROVA 1
 
 \frac {2} {3}+\frac {4} {5x}  	FINE PROVA 2
-SOLUZIONE frazione di 2 su 3, fine frazione + frazione di 4 su 5 x fine frazione, FINE SOLUZIONE PROVA 2
+SOLUZIONE frazione di 2 su 3, fine frazione, + frazione di 4 su 5 x, fine frazione, FINE SOLUZIONE PROVA 2
 
 (\frac{x+1} {x-1})+\frac {x+2}{x-2} 	PROVA 3
-SOLUZIONE aperta tonda, frazione di x+1 su x-1 fine frazone, chiusa tonda, + frazione di x+2 su x-2, fine frazione, FINE SOLUZIONE PROVA 3
+SOLUZIONE aperta tonda, frazione di x+1 su x-1 fine frazione, chiusa tonda, + frazione di x+2 su x-2, fine frazione, FINE SOLUZIONE PROVA 3
 
 \{\frac {x+1+x^2+x+3\cdoty} {x-1} +\frac {x+2} {x-2} \}	PROVA 4
-SOLUZIONE  aperta graffa, frazione di x più 1 più x apice 2, + x+3, moltiplicato y su x -1, fine frazione, + frazione di x più due su x meno due, fine frazione, chiusa graffa  FINE SOLUZIONE PROVA 4
+SOLUZIONE  aperta graffa, frazione di x più 1 più x apice 2, + x+3 moltiplicato y su x -1, fine frazione, + frazione di x più due su x meno due, fine frazione, chiusa graffa  FINE SOLUZIONE PROVA 4
 
 +\sqrt{\frac{1}{9}}=\frac{1}{3} 	PROVA 5
-SOLUZIONE più radice quadrata di frazione di 1 su 9, fine frazione, fine radice, uguale frazione di uno su 3, fine frazione , FINE SOLUZIONE
+SOLUZIONE più radice quadrata di frazione di 1 su 9, fine frazione, fine radice, uguale frazione di uno su 3, fine frazione , FINE SOLUZIONE PROVA 5
 
 \int\sb{\frac{1}{10}}^{11} \sqrt{\frac{1}{1+x}}\,\dd{x}  	PROVA 8
-SOLUZIONE integrale  di pedice ,aperta graffa, frazione di uno su dieci fine frazione  chiusa graffa apice 11, radice quadrata di frazione di uno su 1+x, fine frazione , fine radice, de x  FINE SOLUZIONE
+SOLUZIONE integrale  di pedice ,aperta graffa, frazione di uno su dieci fine frazione  chiusa graffa apice 11, radice quadrata di frazione di uno su 1+x, fine frazione , fine radice, de x  FINE SOLUZIONE PROVA 8
 
 ALGEBRA
 
 ax+by+cz=-1
- SOLUZIONE a x + b y + c z = - 1 FINE SOLUZIONE
+ SOLUZIONE a x + b y + c z = - 1, FINE SOLUZIONE
 \frac {ax+1} {ax^2}
  SOLUZIONE frazione di a x più uno su a x apice, due,fine frazione FINE SOLUZIONE
 
 \dd {a}
-SOLUZIONE de a  FINE SOLUZIONE
+SOLUZIONE de a,  FINE SOLUZIONE
 
 
 
