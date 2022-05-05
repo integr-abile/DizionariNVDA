@@ -123,3 +123,4 @@ d(x|y|z|t)	d \1 	0	1
 \neq	 diverso da 	0	0
 \\	,	0	0
 (\d)([aoie])	\1 \2 	0	1
+(\w\:(.+)\\([^\\]+))	\3, segue il percorso completo  \1	0	1
